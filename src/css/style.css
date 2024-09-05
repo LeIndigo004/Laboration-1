@@ -2,10 +2,10 @@
 
 #wrapper {
   margin: auto;
-  max-width: 400px;
+  max-width: 500px;
   text-align: center;
   background-color: #BABDE2;
-  height: 400px;
+  height: 500px;
   margin-top: 50px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -14,7 +14,7 @@
 }
 
 form {
-  padding: 20px;
+  padding: 40px;
   padding-top: 20%;
 }
 
@@ -25,15 +25,17 @@ h1 {
 h3 {
   font-family: monospace;
   font-size: 20px;
+  font-weight: lighter;
 }
 
 input {
-  padding: 5px;
+  padding: 10px;
+  font-size: 14px;
   border: none;
   border-radius: 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   font-family: monospace;
-  max-width: 400px;
+  width: 250px;
 }
 
 input:active, input:focus {
@@ -41,7 +43,7 @@ input:active, input:focus {
 }
 
 button {
-  padding: 5px;
+  padding: 8px;
   border: none;
   border-radius: 5px;
   color: #FFFCF5;
