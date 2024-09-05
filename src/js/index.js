@@ -27,10 +27,14 @@ async function fetchApi () {
     if (!res.ok) {
       throw new Error(`Response status: ${res.status}`)
     }
+    // Get the countries
     const data = await res.json()
 
-    // Return the data
-    return data
+    // Get a random index
+    const randomIndex = Math.floor(Math.random() * data.length)
+    const randomCountry = data[randomIndex]
+    // log the country
+    console.log(randomCountry)
   } catch (error) {
     console.error(error.message)
   }
