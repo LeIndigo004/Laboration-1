@@ -11,7 +11,14 @@ const submitButton = document.querySelector('button')
 // Fetch api when button is clicked
 submitButton.addEventListener('click', (event) => {
   event.preventDefault()
-  displayCountry()
+  const name = document.querySelector('input')
+  // If the field is empty when clicking submit
+  if (name.value === '') {
+    const h3 = document.querySelector('h3')
+    h3.innerHTML = 'Please write your name before submitting!'
+  } else {
+    displayCountry()
+  }
 })
 
 /**
