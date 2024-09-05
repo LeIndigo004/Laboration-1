@@ -58,6 +58,21 @@ async function displayCountry () {
     h3.innerHTML = `Welcome ${name.value} to ${country.name.common}!`
     h3.style.color = '#FFFCF5'
     wrapper.appendChild(h3)
+
+    // Get the country capital
+    const capital = document.createElement('p')
+    capital.innerHTML = `Capital: ${country.capital[0]}`
+    wrapper.appendChild(capital)
+
+    // Get the country region
+    const region = document.createElement('p')
+    region.innerHTML = `Region: ${country.region}`
+    wrapper.appendChild(region)
+
+    // Get the country language
+    const language = document.createElement('p')
+    language.innerHTML = `Language: ${Object.values(country.languages)[0]}`
+    wrapper.appendChild(language)
   } catch (error) {
     console.error(error.message)
   }
