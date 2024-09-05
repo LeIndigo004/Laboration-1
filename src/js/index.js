@@ -20,7 +20,7 @@ submitButton.addEventListener('click', () => {
  */
 async function fetchApi () {
   // Api url
-  const api = 'https://bored-api.appbrewery.com/random'
+  const api = 'https://restcountries.com/v3.1/all'
   try {
     // Fetch api
     const res = await fetch(api)
