@@ -9,9 +9,21 @@
 const submitButton = document.querySelector('button')
 
 // Fetch api when button is clicked
-submitButton.addEventListener('click', () => {
-  fetchApi()
+submitButton.addEventListener('click', (event) => {
+  event.preventDefault()
+  displayCountry()
 })
+
+/**
+ * A function for displaying the given country.
+ */
+function displayCountry () {
+  fetchApi()
+  const form = document.querySelector('form')
+  const wrapper = document.querySelector('#wrapper')
+  form.style.display = 'none'
+  wrapper.style.backgroundColor = '#374375'
+}
 
 /**
  * Get the response from the api.
