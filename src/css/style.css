@@ -5,7 +5,7 @@
   max-width: 500px;
   text-align: center;
   background-color: #BABDE2;
-  height: 500px;
+  height: 550px;
   margin-top: 50px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -74,4 +74,14 @@ img {
 
 p {
   color: #BABDE2;
+}
+
+a {
+  color: #BABDE2;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bolder;
+  text-decoration: underline;
 }

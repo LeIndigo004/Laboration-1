@@ -73,6 +73,12 @@ async function displayCountry () {
     const language = document.createElement('p')
     language.innerHTML = `Language: ${Object.values(country.languages)[0]}`
     wrapper.appendChild(language)
+
+    // Get the map of the country
+    const map = document.createElement('a')
+    map.setAttribute('href', country.maps.googleMaps)
+    map.innerHTML = 'Show map'
+    wrapper.appendChild(map)
   } catch (error) {
     console.error(error.message)
   }
