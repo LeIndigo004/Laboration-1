@@ -6,10 +6,10 @@
  */
 
 // Select the submit button
-const submitButton = document.querySelector('button')
+const submitButton = document.querySelector('form')
 
 // Fetch api when button is clicked
-submitButton.addEventListener('click', (event) => {
+submitButton.addEventListener('submit', (event) => {
   event.preventDefault()
   const name = document.querySelector('input')
   // If the field is empty when clicking submit
