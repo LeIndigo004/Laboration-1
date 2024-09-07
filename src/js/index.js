@@ -43,7 +43,6 @@ async function displayCountry () {
     // Put the countrys name as the header
     h1.innerHTML = country.name.common
     h1.setAttribute('class', 'countryName')
-    h1.style.color = '#FFFCF5'
     wrapper.appendChild(h1)
 
     // Get the flag image for the country
