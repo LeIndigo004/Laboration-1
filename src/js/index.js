@@ -7,7 +7,6 @@
 
 // Select the submit button
 const submitButton = document.querySelector('form')
-document.getElementById('go-back').addEventListener('click', displayCountry)
 
 // Fetch api when button is clicked
 submitButton.addEventListener('submit', (event) => {
@@ -21,6 +20,9 @@ submitButton.addEventListener('submit', (event) => {
     displayCountry()
   }
 })
+
+// Display a new country when button is clicked
+document.getElementById('go-back').addEventListener('click', displayCountry)
 
 /**
  * A function for displaying the given country.
