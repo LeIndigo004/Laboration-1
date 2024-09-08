@@ -39,45 +39,33 @@ async function displayCountry () {
     wrapper.style.backgroundColor = '#374375'
 
     // Create a new header
-    const h1 = document.createElement('h1')
-    // Put the countrys name as the header
-    h1.innerHTML = country.name.common
-    h1.setAttribute('class', 'countryName')
-    wrapper.appendChild(h1)
+    document.querySelector('.country-name').innerHTML = country.name.common
 
     // Get the flag image for the country
-    const flagImage = document.createElement('IMG')
+    const flagImage = document.querySelector('img')
     flagImage.setAttribute('src', country.flags.png)
     flagImage.setAttribute('alt', country.flags.alt)
-    wrapper.appendChild(flagImage)
 
     // Add a smaller text as a welcome message
     const name = document.querySelector('input')
-    const h3 = document.querySelector('h3')
-    h3.innerHTML = `Welcome ${name.value} to ${country.name.common}!`
-    h3.style.color = '#FFFCF5'
-    wrapper.appendChild(h3)
+    document.getElementById('greeting').innerHTML = `Welcome ${name.value} to ${country.name.common}!`
 
     // Get the country capital
-    const capital = document.createElement('p')
-    capital.innerHTML = `Capital: ${country.capital[0]}`
-    wrapper.appendChild(capital)
+    document.getElementById('capital')
+      .innerHTML = `Capital: ${country.capital[0]}`
 
     // Get the country region
-    const region = document.createElement('p')
-    region.innerHTML = `Region: ${country.region}`
-    wrapper.appendChild(region)
+    document.getElementById('region')
+      .innerHTML = `Region: ${country.region}`
 
     // Get the country language
-    const language = document.createElement('p')
-    language.innerHTML = `Language: ${Object.values(country.languages)[0]}`
-    wrapper.appendChild(language)
+    document.getElementById('language')
+      .innerHTML = `Language: ${Object.values(country.languages)[0]}`
 
     // Get the map of the country
-    const map = document.createElement('a')
+    const map = document.getElementById('map')
     map.setAttribute('href', country.maps.googleMaps)
     map.innerHTML = 'Show map'
-    wrapper.appendChild(map)
   } catch (error) {
     console.error(error.message)
   }

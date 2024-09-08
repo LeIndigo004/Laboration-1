@@ -62,9 +62,13 @@ button:hover {
 Response styling
 */
 
-.countryName {
+.country-name {
   padding-top: 30px;
   color: #FFFCF5;
+}
+
+#greeting {
+  color:#FFFCF5
 }
 
 img {
