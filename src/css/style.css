@@ -5,7 +5,7 @@
   max-width: 500px;
   text-align: center;
   background-color: #BABDE2;
-  height: 550px;
+  height: 650px;
   margin-top: 50px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -15,7 +15,7 @@
 
 form {
   padding: 40px;
-  padding-top: 20%;
+  padding-top: 32%;
 }
 
 h1 {
@@ -62,6 +62,14 @@ button:hover {
 Response styling
 */
 
+.country-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrera elementen horisontellt */
+  gap: 1px;
+  display: none;
+}
+
 .country-name {
   padding-top: 30px;
   color: #FFFCF5;
@@ -78,6 +86,7 @@ img {
 }
 
 p {
+  margin-top: 5px;
   color: #BABDE2;
 }
 
@@ -89,4 +98,13 @@ a {
 a:hover {
   font-weight: bolder;
   text-decoration: underline;
+}
+
+#go-back {
+  background-color: #895159;
+  margin-top: 20px;
+}
+
+#go-back:hover {
+  background-color: #DFAEA1;
 }

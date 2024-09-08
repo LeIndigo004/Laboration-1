@@ -7,6 +7,7 @@
 
 // Select the submit button
 const submitButton = document.querySelector('form')
+document.getElementById('go-back').addEventListener('click', displayCountry)
 
 // Fetch api when button is clicked
 submitButton.addEventListener('submit', (event) => {
@@ -37,6 +38,7 @@ async function displayCountry () {
     // Make form invisible
     form.style.display = 'none'
     wrapper.style.backgroundColor = '#374375'
+    document.querySelector('.country-viewer').style.display = 'flex'
 
     // Create a new header
     document.querySelector('.country-name').innerHTML = country.name.common
